@@ -41,5 +41,3 @@ jobs:
         builder: ${{ steps.buildx.outputs.name }}
         push: true
         tags: '${{ secrets.AD_CR_URL }}/linkedin-post-gen:latest'
-        cache-from: 'type=registry,ref=${{ secrets.AD_CR_URL }}/linkedin-post-gen:buildcache'
-        cache-to: 'type=registry,ref=${{ secrets.AD_CR_URL }}/linkedin-post-gen:buildcache,mode=max'
