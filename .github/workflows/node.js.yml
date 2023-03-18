@@ -38,6 +38,5 @@ jobs:
       with:
         context: ./
         file: ./Dockerfile
-        builder: ${{ steps.buildx.outputs.name }}
         push: true
         tags: '${{ secrets.AD_CR_URL }}/linkedin-post-gen:latest'
